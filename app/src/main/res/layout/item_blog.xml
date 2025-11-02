@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/vanilla"
+    android:background="@drawable/rounded_card"
+    android:padding="10dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/blogImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginEnd="10dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/blogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Packing Tips for Summer"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/blogDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn how to pack efficiently for your next summer trip."
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/INDIGO" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/readMoreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/INDIGO"
+            android:text="Read More"
+            app:cornerRadius="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"/>
+    </LinearLayout>
+</LinearLayout>
